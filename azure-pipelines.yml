@@ -25,8 +25,8 @@ steps:
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
     
-    - task: KubernetesManifest@0
-      inputs:
+- task: KubernetesManifest@0
+    inputs:
         action: 'deploy'
         kubernetesServiceConnection: 'terraapi-wso2'
         namespace: 'wso2'
