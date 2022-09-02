@@ -26,9 +26,8 @@ steps:
     Dockerfile: '**/Dockerfile'
     
 - task: KubernetesManifest@0
-    inputs:
-        action: 'deploy'
-        kubernetesServiceConnection: 'terraapi-wso2'
-        namespace: 'wso2'
-        manifests: 'deployment'
-        containers: 'wso2identity'
+  inputs:
+    action: 'deploy'
+    kubernetesServiceConnection: 'terraapi-wso2'
+    namespace: 'wso2'
+    manifests: 'deployment'
